@@ -5,6 +5,9 @@ const errorHandle = require('./utils/errorHandle.js');
 
 const Post = require('./models/post.js');
 
+const connectMongodb = require('./connections/mongodb-connect');
+connectMongodb('SOCIAL');
+
 const requestListener = async (req, res) => {
   let body = '';
   req.on('data', (chunk) => {

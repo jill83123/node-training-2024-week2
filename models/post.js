@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-const connectMongodb = require('../connections/mongodb-connect');
-connectMongodb('SOCIAL');
 
 const postSchema = new mongoose.Schema(
   {
